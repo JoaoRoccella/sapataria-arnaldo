@@ -1,3 +1,17 @@
-body {
-  color: red;
+.titulo-pagina {
+  text-align: center;
+  font-size: 24pt;
+}
+.subtitulo-pagina {
+  text-align: center;
+  font-size: 20pt;
+}
+.titulo-artigo {
+  font-size: 18pt;
+}
+.subtitulo-artigo {
+  font-size: 14pt;
+}
+.texto-artigo {
+  font-size: 10pt;
 }
