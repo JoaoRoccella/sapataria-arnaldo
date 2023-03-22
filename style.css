@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
 .titulo-pagina {
+  margin: 40px 10px 10px 10px; /*margin: top right bottom left; */
   font-size: 24pt;
+  font-weight: 700;
+  color: #a75207; /* Código hexadecimal da cor */
 }
 
 .subtitulo-pagina {
   font-size: 20pt;
+  margin: 10px 10px 10px 10px;
 }
 
 .titulo-artigo {
   font-size: 18pt;
+  margin: 10px 10px 10px 10px;
 }
 
 .subtitulo-artigo {
   font-size: 14pt;
+  margin: 10px 10px 10px 10px;
+}
+
+.paragrafo-artigo {
+  font-size: 12pt;
+  margin: 10px 10px 10px 10px;
+  line-height: 1.4;
 }
