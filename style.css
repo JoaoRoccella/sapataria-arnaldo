@@ -4,16 +4,23 @@ body {
   font-family: Raleway, sans-serif;
 }
 
+main {
+  margin: auto;
+  width: 80%;
+}
+
 .titulo-pagina {
-  margin: 40px 10px 10px 10px; /*margin: top right bottom left; */
+  margin: 40px auto 10px; /*margin: top right bottom left; */
+  width: 80%;
   font-size: 24pt;
   font-weight: 700;
   color: #a75207; /* Código hexadecimal da cor */
 }
 
 .subtitulo-pagina {
+  margin: 10px auto 10px;
+  width: 80%;
   font-size: 20pt;
-  margin: 10px 10px 10px 10px;
 }
 
 .titulo-artigo {
@@ -36,3 +43,43 @@ body {
   text-decoration: none;
 }
 
+.banner-header {
+  width: 100%;
+  height: 200px; /* perde o aspect ratio */
+  object-fit: cover;
+  object-position: 50% 20%;
+} 
+
+.categoria-produto {
+  font-size: 140%;
+  font-weight: 600;
+  margin: 10px 10px 10px 10px;
+  background-color: #a75207;
+  color: #ffffff;
+  line-height: 3;
+  padding-left: 20px;
+}
+
+.vitrine-produtos {
+  margin: 40px 0;
+}
+
+.lista-produtos {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.imagem-produto {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  object-position: 0 0;
+}
+
+footer {
+  background-color: #a75207;
+  color: #ffffff;
+  padding: 20px;
+}
