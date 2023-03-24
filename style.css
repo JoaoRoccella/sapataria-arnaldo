@@ -35,3 +35,10 @@ body {
 .link-menu-principal a {
   text-decoration: none;
 }
+
+.banner-header {
+  width: 100%; /* Largura */
+  height: 200px; /* Altura */
+  object-fit: cover; /* Ajuste do objeto: capa */
+  object-position: 0 0;
+}
