@@ -43,13 +43,6 @@ main {
   text-decoration: none;
 }
 
-.banner-header {
-  width: 100%;
-  height: 200px; /* perde o aspect ratio */
-  object-fit: cover;
-  object-position: 50% 20%;
-} 
-
 .categoria-produto {
   font-size: 140%;
   font-weight: 600;
@@ -81,5 +74,26 @@ main {
 .rodape {
   background-color: #a75207;
   color: #ffffff;
+  padding: 20px;
+}
+
+.imagem-banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 10%;
+}
+
+.menu-navegacao {
+  width: 80%;
+  margin: auto;
+}
+
+.menu-navegacao ul {
+  display: flex;
+  justify-content: start;
+}
+
+.menu-navegacao ul li {
   padding: 20px;
 }
