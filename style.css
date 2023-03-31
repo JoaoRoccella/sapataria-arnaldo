@@ -84,16 +84,3 @@ main {
   object-position: 0 10%;
 }
 
-.menu-navegacao {
-  width: 80%;
-  margin: auto;
-}
-
-.menu-navegacao ul {
-  display: flex;
-  justify-content: start;
-}
-
-.menu-navegacao ul li {
-  padding: 20px;
-}
