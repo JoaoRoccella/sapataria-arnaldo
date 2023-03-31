@@ -19,3 +19,4 @@ Adicionando um commit vazio:
 ```
 git commit -m "Commit vazio" --allow-empty
 ```
+

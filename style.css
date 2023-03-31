@@ -11,6 +11,7 @@ main {
 
 .titulo-pagina {
   margin: 40px auto 10px; /*margin: top right bottom left; */
+  padding-left: 10px;
   width: 80%;
   font-size: 24pt;
   font-weight: 700;
@@ -19,6 +20,7 @@ main {
 
 .subtitulo-pagina {
   margin: 10px auto 10px;
+  padding-left: 10px;
   width: 80%;
   font-size: 20pt;
 }
@@ -84,3 +86,16 @@ main {
   object-position: 0 10%;
 }
 
+.menu-navegacao {
+  width: 80%;
+  margin: auto;
+}
+
+.menu-navegacao ul {
+  display: flex;
+  justify-content: start;
+}
+
+.menu-navegacao ul li {
+  padding: 20px;
+}
