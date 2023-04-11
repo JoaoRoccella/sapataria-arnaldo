@@ -18,4 +18,3 @@
 ### Otimização de imagens
 - [Optimizilla](https://imagecompressor.com/)
 
-
