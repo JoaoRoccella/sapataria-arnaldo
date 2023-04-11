@@ -3,7 +3,7 @@
 Adicionando um novo branch e já mudando para ele:
 ```
 git checkout -b dev
-```
+``` 
 
 Adicionando o branch **local** ao repositório remoto:
 ```
