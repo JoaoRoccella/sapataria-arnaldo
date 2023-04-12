@@ -99,3 +99,52 @@ main {
 .menu-navegacao ul li {
   padding: 20px;
 }
+
+.secao-contato {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario-contato {
+  width: 60%;
+}
+
+.formulario-contato label {
+  width: 100%;
+  display: block;
+}
+
+.formulario-contato input, 
+.formulario-contato textarea {
+  width: 80%;
+  margin: 5px 0;
+}
+
+.formulario-contato textarea {
+  resize: none;
+}
+
+.informacoes-complementares {
+  width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  main,
+  .menu-navegacao,
+  .titulo-pagina,
+  .subtitulo-pagina, 
+  .formulario-contato {
+    width: 100%;
+  }
+  .titulo-pagina {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .menu-navegacao ul li, .rodape {
+    padding: 10px 5px;
+  }
+}
