@@ -90,16 +90,16 @@ main {
   object-position: 0 10%;
 }
 
-.menu-navegacao {
+.navbar {
   width: 80%;
   margin: auto;
 }
 
-.menu-navegacao ul {
+.navbar ul {
   display: flex;
   justify-content: start;
 }
 
-.menu-navegacao ul li {
+.navbar ul li {
   padding: 20px;
 }
