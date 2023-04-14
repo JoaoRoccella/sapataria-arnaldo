@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@500&display=swap');
+
+:root {
+  --cor-principal: #a75207;
+  --fonte-titulos: 'Anuphan', sans-serif;
+}
 
 body {
   font-family: Raleway, sans-serif;
-}
-
-main {
-  margin: auto;
-  width: 80%;
 }
 
 .titulo-pagina {
@@ -15,7 +16,13 @@ main {
   width: 80%;
   font-size: 24pt;
   font-weight: 700;
-  color: #a75207; /* Código hexadecimal da cor */
+  font-family: var(--fonte-titulos);
+  color: var(--cor-principal); /* Código hexadecimal da cor */
+}
+
+main {
+  margin: auto;
+  width: 80%;
 }
 
 .subtitulo-pagina {
@@ -23,6 +30,7 @@ main {
   padding-left: 10px;
   width: 80%;
   font-size: 20pt;
+  font-family: var(--fonte-titulos);
 }
 
 .titulo-artigo {
@@ -48,8 +56,9 @@ main {
 .categoria-produto {
   font-size: 140%;
   font-weight: 600;
+  font-family: var(--fonte-titulos);
   margin: 10px 10px 10px 10px;
-  background-color: #a75207;
+  background-color: var(--cor-principal);
   color: #ffffff;
   line-height: 3;
   padding-left: 20px;
@@ -59,7 +68,7 @@ main {
   margin: 40px 0;
 }
 
-.lista-produtos {
+.product-list {
   margin: 40px 0;
   display: flex;
   justify-content: space-between;
@@ -74,7 +83,7 @@ main {
 }
 
 .rodape {
-  background-color: #a75207;
+  background-color: var(--cor-principal);
   color: #ffffff;
   padding: 20px;
 }
@@ -96,7 +105,7 @@ main {
   justify-content: start;
 }
 
-.menu-navegacao ul li {
+.menu-navegacao li {
   padding: 20px;
 }
 
@@ -144,7 +153,8 @@ main {
 }
 
 @media screen and (max-width: 380px) {
-  .menu-navegacao ul li, .rodape {
+  .menu-navegacao li,
+  .rodape {
     padding: 10px 5px;
   }
 }
