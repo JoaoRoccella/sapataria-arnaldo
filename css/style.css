@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
 
+:root {
+  --primary-color: #a75207;
+}
+
 body {
   font-family: Raleway, sans-serif;
 }
@@ -9,16 +13,16 @@ main {
   width: 80%;
 }
 
-.titulo-pagina {
+.page-title {
   margin: 40px auto 10px; /*margin: top right bottom left; */
   padding-left: 10px;
   width: 80%;
   font-size: 24pt;
   font-weight: 700;
-  color: #a75207; /* Código hexadecimal da cor */
+  color: var(--primary-color); /* Código hexadecimal da cor */
 }
 
-.subtitulo-pagina {
+.page-subtitle {
   margin: 10px auto 10px;
   padding-left: 10px;
   width: 80%;
@@ -49,7 +53,7 @@ main {
   font-size: 140%;
   font-weight: 600;
   margin: 10px 10px 10px 10px;
-  background-color: #a75207;
+  background-color: var(--primary-color);
   color: #ffffff;
   line-height: 3;
   padding-left: 20px;
@@ -74,7 +78,7 @@ main {
 }
 
 .rodape {
-  background-color: #a75207;
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 20px;
 }
