@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Entre em contato conosco para falar sobre orçamentos, pedidos, prazos ou só para bater um bom papo.">
   <meta name="author" content="João Roccella">
-  <meta name="keywords" content="sapataria, bolsas, sapatos, atendimento, contato, fale conosco">
+  
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Sapataria do Arnaldo - Contato</title>
@@ -29,8 +29,58 @@
   </header>
 
   <main>
+    <section class="secao-contato">
+      <form class="formulario-contato" action="" method="" >
+        <label for="nomecompleto">Nome completo:</label>
+        <input type="text" name="nomecompleto">
 
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        
+        <label for="assunto">Assunto:</label>
+        <input type="text" name="assunto">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem"></textarea> 
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone">
+
+        <button>Enviar</button>
+      </form>
+      
+      <aside class="informacoes-complemetares">
+        
+        <div class="imagem-local">
+          <img src="imagem-local.png" alt="Imagem do local">
+        </div>
+        
+        <div class="informacoes-local">
+          
+          <div class="horario-atendimento">
+            <h3>Horário de funcionamento</h3>
+            <p>De segunda a sexta</p>
+            <p>Das 08h às 18h</p>
+            <p>Sábados</p>
+            <p>Das 08h às 12h</p>
+          </div>
+
+          <div class="links-sociais">
+            <a href="#instagram">
+              <img src="icone-insta.png" alt="Ícone do Instagram">
+            </a>
+            <a href="#facebook">
+              <img src="icone-face.png" alt="Ícone do Facebook">
+            </a>
+          </div>
+
+        </div>
+        
+      </aside>
+    
+    </section>
   </main>
+  
   <footer class="rodape">
     <address>
       <p>Rua Forte do Leme, 52</p>
@@ -39,5 +89,6 @@
       <p>(11) 3214-5678</p>
     </address>
   </footer>
+
 </body>
 </html>
