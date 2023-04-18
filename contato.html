@@ -7,20 +7,20 @@
   <meta name="description" content="Entre em contato conosco para falar sobre orçamentos, pedidos, prazos ou só para bater um bom papo.">
   <meta name="author" content="João Roccella">
   
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Sapataria do Arnaldo - Contato</title>
 </head>
 <body>
   <header>
     
     <!-- Menu de Navegação -->
-    <nav class="menu-navegacao">
+    <nav class="navbar">
       <ul>
-        <li class="link-menu-principal"><a href="index.html">Home</a></li>
-        <li class="link-menu-principal"><a href="sobre-nos.html">Sobre Nós</a></li>
-        <li class="link-menu-principal"><a href="catalogo.html">Catálogo</a></li>
-        <li class="link-menu-principal"><a href="contato.html">Contato</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./sobre-nos.html">Sobre Nós</a></li>
+        <li><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./contato.html">Contato</a></li>
       </ul>
     </nav>
 
@@ -32,20 +32,25 @@
     <section class="secao-contato">
       <form class="formulario-contato" action="" method="" >
         
-        <label for="nomecompleto">Nome completo:</label>
-        <input type="text" name="nomecompleto">
+        <label for="name">Nome completo:</label>
+        <input type="text" id="name" name="name" autofocus required>
 
         <label for="email">Email:</label>
-        <input type="email" name="email">
+        <input type="email" id="email" name="email" required>
         
-        <label for="assunto">Assunto:</label>
-        <input type="text" name="assunto">
+        <label for="subject">Assunto:</label>
+        <select id="subject" name="subject" required>
+          <option value="Prazo de entrega">Prazo de entrega</option>
+          <option value="Orçamento">Orçamento</option>
+          <option value="Pagamento">Pagamento</option>
+          <option value="Outro">Outro</option>
+        </select>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea name="mensagem"></textarea> 
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message"></textarea> 
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" name="telefone">
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone">
 
         <button>Enviar</button>
       </form>
@@ -53,7 +58,7 @@
       <aside class="informacoes-complemetares">
         
         <div class="imagem-local">
-          <img src="imagem-local.png" alt="Imagem do local">
+          <img src="./img/fachada-sapataria.webp" alt="Imagem do local">
         </div>
         
         <div class="informacoes-local">

@@ -95,18 +95,23 @@ main {
   object-position: 0 10%;
 }
 
-.menu-navegacao {
+/* Menu de navegação principal */
+.navbar {
   width: 80%;
   margin: auto;
 }
 
-.menu-navegacao ul {
+.navbar ul {
   display: flex;
   justify-content: start;
 }
 
-.menu-navegacao li {
+.navbar li {
   padding: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
 }
 
 .secao-contato {
@@ -139,6 +144,11 @@ main {
   width: 30%;
 }
 
+.imagem-local img {
+  width: 100%;
+}
+
+/* Responsividade */
 @media screen and (max-width: 600px) {
   main,
   .menu-navegacao,
