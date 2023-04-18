@@ -45,10 +45,6 @@ main {
   line-height: 1.4;
 }
 
-.link-menu-principal a {
-  text-decoration: none;
-}
-
 .categoria-produto {
   font-size: 140%;
   font-weight: 600;
@@ -90,6 +86,7 @@ main {
   object-position: 0 10%;
 }
 
+/* Navbar (Menu Principal) */
 .navbar {
   width: 80%;
   margin: auto;
@@ -100,6 +97,10 @@ main {
   justify-content: start;
 }
 
-.navbar ul li {
+.navbar li {
   padding: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
 }
