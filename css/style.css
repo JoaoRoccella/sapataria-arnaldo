@@ -94,7 +94,7 @@ main {
 
 .navbar ul {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .navbar li {
@@ -103,4 +103,19 @@ main {
 
 .navbar a {
   text-decoration: none;
+}
+
+/* Página de contato */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container img {
+  width: 200px;
+}
+
+.container h3 {
+  font-size: 14pt;
+  font-weight: 600;
 }
