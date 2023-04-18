@@ -164,9 +164,15 @@ button {
   object-fit: cover;
 }
 
-.opening-hours h3 {
+.opening-hours h3,
+.main-address h3 {
   font-size: 14pt;
   font-weight: 700;
+  margin: 15px 0;
+}
+
+.main-address p {
+  line-height: 1.5;
 }
 
 /* Responsividade */
