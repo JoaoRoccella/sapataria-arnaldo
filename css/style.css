@@ -119,3 +119,24 @@ main {
   font-size: 14pt;
   font-weight: 600;
 }
+
+/* Formulário */
+label, 
+button {
+  display: block;
+}
+
+.contact-form {
+  width: 60%;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Fazer o comando no javascript */
