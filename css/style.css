@@ -11,13 +11,15 @@ body {
 }
 
 .titulo-pagina {
-  margin: 40px auto 10px; /*margin: top right bottom left; */
+  margin: 40px auto 10px;
+  /*margin: top right bottom left; */
   padding-left: 10px;
   width: 80%;
   font-size: 24pt;
   font-weight: 700;
   font-family: var(--fonte-titulos);
-  color: var(--cor-principal); /* Código hexadecimal da cor */
+  color: var(--cor-principal);
+  /* Código hexadecimal da cor */
 }
 
 main {
@@ -62,7 +64,7 @@ main {
   color: #ffffff;
   line-height: 3;
   padding-left: 20px;
-} 
+}
 
 .vitrine-produtos {
   margin: 40px 0;
@@ -130,14 +132,17 @@ main {
   display: block;
 }
 
-.contact-form input, 
-.contact-form textarea {
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
   width: 100%;
   margin: 5px 0;
+  box-sizing: border-box;
 }
 
 select {
-  width: calc(100% + 8px);
+
   height: 1.4rem;
   margin: 5px 0;
 }
@@ -148,10 +153,10 @@ select {
 }
 
 button {
-  width: calc(100% + 8px);
   line-height: 1.5;
-  margin: 10px 0;
-  box-shadow: #ccc 2px 2px 2px;
+  box-shadow: #c0c1c2 2px 2px 2px;
+  border-radius: 2px;
+  border: none;
 }
 
 .complementary-info {
@@ -177,19 +182,22 @@ button {
 
 /* Responsividade */
 @media screen and (max-width: 600px) {
+
   main,
   .menu-navegacao,
   .titulo-pagina,
-  .subtitulo-pagina, 
+  .subtitulo-pagina,
   .formulario-contato {
     width: 100%;
   }
+
   .titulo-pagina {
     margin: 10px 0;
   }
 }
 
 @media screen and (max-width: 380px) {
+
   .menu-navegacao li,
   .rodape {
     padding: 10px 5px;
