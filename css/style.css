@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;900&display=swap');
 
 :root {
   --primary-color: #a75207;
@@ -20,6 +20,11 @@ main {
   font-size: 24pt;
   font-weight: 700;
   color: var(--primary-color); /* Código hexadecimal da cor */
+}
+
+.titulo-forte {
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .page-subtitle {
@@ -139,4 +144,6 @@ button {
   box-sizing: border-box;
 }
 
-/* Fazer o comando no javascript */
+.required::after {
+  content: "*";
+}
