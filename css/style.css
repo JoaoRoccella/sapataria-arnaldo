@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   --cor-principal: #a75207;
-  --fonte-titulos: 'Anuphan', sans-serif;
+  --cor-secundaria: #faf3dd;
+  --fonte-titulos: 'Poppins', sans-serif;
 }
 
 body {
   font-family: Raleway, sans-serif;
 }
 
-.titulo-pagina {
+.page-title {
   margin: 40px auto 10px;
   /*margin: top right bottom left; */
   padding-left: 10px;
   width: 80%;
   font-size: 24pt;
-  font-weight: 700;
   font-family: var(--fonte-titulos);
   color: var(--cor-principal);
   /* Código hexadecimal da cor */
+}
+
+.strong-title {
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 main {
@@ -27,7 +32,7 @@ main {
   width: 80%;
 }
 
-.subtitulo-pagina {
+.page-subtitle {
   margin: 10px auto 10px;
   padding-left: 10px;
   width: 80%;
@@ -49,10 +54,6 @@ main {
   font-size: 12pt;
   margin: 10px 10px 10px 10px;
   line-height: 1.4;
-}
-
-.link-menu-principal a {
-  text-decoration: none;
 }
 
 .categoria-produto {
@@ -84,7 +85,7 @@ main {
   object-position: 0 0;
 }
 
-.rodape {
+.footer {
   background-color: var(--cor-principal);
   color: #ffffff;
   padding: 20px;
@@ -97,15 +98,30 @@ main {
   object-position: 0 10%;
 }
 
+.topo {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background-color: var(--cor-principal);
+}
+
+.logo {
+  font-family: Poppins, sans-serif;
+  font-size: 16pt;
+  font-weight: 900;
+  color: var(--cor-secundaria);
+  margin: 20px auto 0;
+  white-space: nowrap;
+}
+
 /* Menu de navegação principal */
 .navbar {
-  width: 80%;
   margin: auto;
 }
 
 .navbar ul {
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
 }
 
 .navbar li {
@@ -114,9 +130,16 @@ main {
 
 .navbar a {
   text-decoration: none;
+  padding-bottom: 5px;
+  color: var(--cor-secundaria);
 }
 
-.secao-contato {
+.navbar a:hover {
+  border-bottom: var(--cor-secundaria) solid 2px;
+  transition: 100ms;
+}
+
+.contact-section {
   width: 80%;
   margin: auto;
   display: flex;
@@ -142,7 +165,6 @@ main {
 }
 
 select {
-
   height: 1.4rem;
   margin: 5px 0;
 }
@@ -180,26 +202,33 @@ button {
   line-height: 1.5;
 }
 
-/* Responsividade */
+/* Responsividade para telas de até 600px */
 @media screen and (max-width: 600px) {
 
   main,
-  .menu-navegacao,
-  .titulo-pagina,
-  .subtitulo-pagina,
-  .formulario-contato {
+  .navbar,
+  .page-title,
+  .page-subtitle,
+  .contact-section,
+  .contact-form {
     width: 100%;
   }
 
-  .titulo-pagina {
+  .contact-section,
+  .contact-form {
+    padding: 0 5px;
+  }
+
+  .page-title {
     margin: 10px 0;
   }
 }
 
+/* Responsividade para telas de até 380px */
 @media screen and (max-width: 380px) {
 
-  .menu-navegacao li,
-  .rodape {
+  .navbar li,
+  .footer {
     padding: 10px 5px;
   }
 }
