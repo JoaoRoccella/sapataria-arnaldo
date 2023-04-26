@@ -1,7 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --cor-principal: #a75207;
+  --cor-secundaria: #faf3dd;
+  --fonte-titulos: 'Poppins', sans-serif;
+}
 
 body {
   font-family: Raleway, sans-serif;
+}
+
+.page-title {
+  margin: 40px auto 10px;
+  /*margin: top right bottom left; */
+  padding-left: 10px;
+  width: 80%;
+  font-size: 24pt;
+  font-family: var(--fonte-titulos);
+  color: var(--cor-principal);
+  /* Código hexadecimal da cor */
+}
+
+.strong-title {
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 main {
@@ -9,20 +32,12 @@ main {
   width: 80%;
 }
 
-.titulo-pagina {
-  margin: 40px auto 10px; /*margin: top right bottom left; */
-  padding-left: 10px;
-  width: 80%;
-  font-size: 24pt;
-  font-weight: 700;
-  color: #a75207; /* Código hexadecimal da cor */
-}
-
-.subtitulo-pagina {
+.page-subtitle {
   margin: 10px auto 10px;
   padding-left: 10px;
   width: 80%;
   font-size: 20pt;
+  font-family: var(--fonte-titulos);
 }
 
 .titulo-artigo {
@@ -41,25 +56,22 @@ main {
   line-height: 1.4;
 }
 
-.link-menu-principal a {
-  text-decoration: none;
-}
-
 .categoria-produto {
   font-size: 140%;
   font-weight: 600;
+  font-family: var(--fonte-titulos);
   margin: 10px 10px 10px 10px;
-  background-color: #a75207;
+  background-color: var(--cor-principal);
   color: #ffffff;
   line-height: 3;
   padding-left: 20px;
-} 
+}
 
 .vitrine-produtos {
   margin: 40px 0;
 }
 
-.lista-produtos {
+.product-list {
   margin: 40px 0;
   display: flex;
   justify-content: space-between;
@@ -73,8 +85,8 @@ main {
   object-position: 0 0;
 }
 
-.rodape {
-  background-color: #a75207;
+.footer {
+  background-color: var(--cor-principal);
   color: #ffffff;
   padding: 20px;
 }
@@ -86,16 +98,137 @@ main {
   object-position: 0 10%;
 }
 
-.menu-navegacao {
-  width: 80%;
+.topo {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background-color: var(--cor-principal);
+}
+
+.logo {
+  font-family: Poppins, sans-serif;
+  font-size: 16pt;
+  font-weight: 900;
+  color: var(--cor-secundaria);
+  margin: 20px auto 0;
+  white-space: nowrap;
+}
+
+/* Menu de navegação principal */
+.navbar {
   margin: auto;
 }
 
-.menu-navegacao ul {
+.navbar ul {
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
 }
 
-.menu-navegacao ul li {
+.navbar li {
   padding: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: var(--cor-secundaria);
+}
+
+.navbar a:hover {
+  border-bottom: var(--cor-secundaria) solid 2px;
+  transition: 100ms;
+}
+
+.contact-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contact-form label {
+  width: 100%;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
+  width: 100%;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+select {
+  height: 1.4rem;
+  margin: 5px 0;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 4rem;
+}
+
+button {
+  line-height: 1.5;
+  box-shadow: #c0c1c2 2px 2px 2px;
+  border-radius: 2px;
+  border: none;
+}
+
+.complementary-info {
+  width: 30%;
+}
+
+.address-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.opening-hours h3,
+.main-address h3 {
+  font-size: 14pt;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.main-address p {
+  line-height: 1.5;
+}
+
+/* Responsividade para telas de até 600px */
+@media screen and (max-width: 600px) {
+
+  main,
+  .navbar,
+  .page-title,
+  .page-subtitle,
+  .contact-section,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-section,
+  .contact-form {
+    padding: 0 5px;
+  }
+
+  .page-title {
+    margin: 10px 0;
+  }
+}
+
+/* Responsividade para telas de até 380px */
+@media screen and (max-width: 380px) {
+
+  .navbar li,
+  .footer {
+    padding: 10px 5px;
+  }
 }
