@@ -26,15 +26,17 @@
       </ul>
     </nav>
 
-    <h1 class="page-title">Contato</h1>
+    <h1 class="page-title titulo-forte">Contato</h1>
     <h2 class="page-subtitle">Entre em contato conosco</h2>
   </header>
 
   <div class="container">
     <main>
       <!-- Fazer o comando no Javascript -->
-      <form class="contact-form" action="" method="">
-        <label for="name">Nome:</label>
+      <form class="contact-form" action="" method="" 
+        onsubmit="alert('Formulário enviado')">
+        
+        <label class="required" for="name">Nome:</label>
         <input type="text" id="name" autofocus required>
   
         <label for="email">E-mail:</label>
