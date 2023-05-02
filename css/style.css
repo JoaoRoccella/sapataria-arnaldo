@@ -99,7 +99,7 @@ main {
 
 .navbar ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .navbar li {
