@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --cor-principal: #a75207;
-  --cor-secundaria: #faf3dd;
+  --primary-color: #a75207;
+  --secondary-color: #faf3dd;
   --fonte-titulos: 'Poppins', sans-serif;
 }
 
 body {
   font-family: Raleway, sans-serif;
+}
+
+main {
+  margin: auto;
+  width: 80%;
 }
 
 .page-title {
@@ -18,7 +23,7 @@ body {
   width: 80%;
   font-size: 24pt;
   font-family: var(--fonte-titulos);
-  color: var(--cor-principal);
+  color: var(--primary-color);
   /* Código hexadecimal da cor */
 }
 
@@ -27,21 +32,7 @@ body {
   text-transform: uppercase;
 }
 
-main {
-  margin: auto;
-  width: 80%;
-}
-
-.titulo-pagina {
-  margin: 40px auto 10px; /*margin: top right bottom left; */
-  padding-left: 10px;
-  width: 80%;
-  font-size: 24pt;
-  font-weight: 700;
-  color: #a75207; /* Código hexadecimal da cor */
-}
-
-.subtitulo-pagina {
+.page-subtitle {
   margin: 10px auto 10px;
   padding-left: 10px;
   width: 80%;
@@ -61,8 +52,17 @@ main {
 
 .paragrafo-artigo {
   font-size: 12pt;
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
   line-height: 1.4;
+}
+
+.f-paragraph::first-line {
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+.f-paragraph:hover::first-line {
+  text-decoration: underline;
 }
 
 .categoria-produto {
@@ -71,7 +71,6 @@ main {
   font-family: var(--fonte-titulos);
   margin: 10px 10px 10px 10px;
   background-color: var(--primary-color);
-  background-color: var(--cor-principal);
   color: #ffffff;
   line-height: 3;
   padding-left: 20px;
@@ -96,7 +95,7 @@ main {
 }
 
 .footer {
-  background-color: var(--cor-principal);
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 20px;
 }
@@ -112,14 +111,14 @@ main {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  background-color: var(--cor-principal);
+  background-color: var(--primary-color);
 }
 
 .logo {
   font-family: Poppins, sans-serif;
   font-size: 16pt;
   font-weight: 900;
-  color: var(--cor-secundaria);
+  color: var(--secondary-color);
   margin: 20px auto 0;
   white-space: nowrap;
 }
@@ -129,12 +128,10 @@ main {
   margin: auto;
 }
 
-
 .navbar ul {
   display: flex;
   justify-content: start;
 }
-
 
 .navbar a {
   padding: 20px;
@@ -194,11 +191,11 @@ button {
 .navbar a {
   text-decoration: none;
   padding-bottom: 5px;
-  color: var(--cor-secundaria);
+  color: var(--secondary-color);
 }
 
 .navbar a:hover {
-  border-bottom: var(--cor-secundaria) solid 2px;
+  border-bottom: var(--secondary-color) solid 2px;
   transition: 100ms;
 }
 
@@ -299,11 +296,11 @@ button {
 .navbar a {
   text-decoration: none;
   padding-bottom: 5px;
-  color: var(--cor-secundaria);
+  color: var(--secondary-color);
 }
 
 .navbar a:hover {
-  border-bottom: var(--cor-secundaria) solid 2px;
+  border-bottom: var(--secondary-color) solid 2px;
   transition: 100ms;
 }
 
