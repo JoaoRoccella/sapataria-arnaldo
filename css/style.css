@@ -129,13 +129,13 @@ main {
   margin: auto;
 }
 
-.navbar ul {
+
 .navbar ul {
   display: flex;
   justify-content: start;
 }
 
-.navbar li {
+
 .navbar a {
   padding: 20px;
   text-decoration: none;
