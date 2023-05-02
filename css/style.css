@@ -22,7 +22,7 @@ main {
   color: var(--primary-color); /* Código hexadecimal da cor */
 }
 
-.titulo-forte {
+.strong-title {
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -103,11 +103,24 @@ main {
 }
 
 .navbar li {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .navbar a {
+  padding: 20px;
   text-decoration: none;
+}
+
+.navbar a:link,
+.navbar a:visited {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.navbar li:hover,
+.navbar li:hover > a {
+  background-color: var(--primary-color);
+  color: #ffffff;
 }
 
 /* Página de contato */
