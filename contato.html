@@ -12,6 +12,7 @@
   <title>Sapataria do Arnaldo - Contato</title>
   <script src="https://kit.fontawesome.com/39b9ad0e36.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
 
@@ -37,71 +38,50 @@
     <h2 class="page-subtitle">Entre em contato conosco</h2>
   </header>
 
-  <main>
-    <section class="contact-section">
+  <div class="container">
+    <main>
+      <!-- Fazer o comando no Javascript -->
       <form class="contact-form" action="" method="" 
-        onsubmit="alert('Formulário enviado!')">
+        onsubmit="alert('Formulário enviado')">
         
-        <label for="name">Nome completo:</label>
-        <input type="text" id="name" name="name" autofocus required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
+        <label class="required" for="name">Nome:</label>
+        <input type="text" id="name" autofocus required>
+  
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+  
         <label for="subject">Assunto:</label>
-        <select id="subject" name="subject" required>
-          <option value="Prazo de entrega">Prazo de entrega</option>
-          <option value="Orçamento">Orçamento</option>
-          <option value="Pagamento">Pagamento</option>
-          <option value="Outro">Outro</option>
+        <select id="subject" required>
+          <option value="prazo">Prazo de entrega</option>
+          <option value="orcamento">Orçamento</option>
+          <option value="contato">Contato</option>
+          <option value="outros">Outros</option>
         </select>
 
+  
         <label for="message">Mensagem:</label>
-        <textarea id="message" name="message"></textarea> 
-
+        <textarea id="message" cols="30" rows="5"></textarea>
+  
         <label for="phone">Telefone:</label>
-        <input type="tel" id="phone" name="phone">
-
+        <input type="tel" id="phone">
+  
         <button>Enviar</button>
       </form>
-      
-      <aside class="complementary-info">
-        
-        <div class="address-image">
-          <img src="./img/fachada-sapataria.webp" alt="Imagem da fachada da sapataria">
-        </div>
-        
-        <div class="address-info">
-          
-          <div class="opening-hours">
-            <h3>Horário de funcionamento</h3>
-            <p>De segunda a sexta</p>
-            <p>Das 08h às 18h</p>
-            <p>Sábados</p>
-            <p>Das 08h às 12h</p>
-          </div>
+    </main>
 
-          <div class="links-sociais">
-            <a href="#instagram">
-              <img src="icone-insta.png" alt="Ícone do Instagram">
-            </a>
-            <a href="#facebook">
-              <img src="icone-face.png" alt="Ícone do Facebook">
-            </a>
-          </div>
-
-        </div>
-        
-      </aside>
-    
-    </section>
-  </main>
+    <aside>
+      <img src="./img/fachada-sapataria.webp" alt="Foto da fachada da sapataria">
   
-  <footer class="footer">
+      <h3 class="">Horário de funcionamento</h3>
+      <p>Seg. a sex.</p>
+      <p>das 08h às 17h</p>
+      <p>Sábados</p>
+      <p>das 09h às 12h</p>
+    </aside>
+  </div>
 
-    <address class="main-address">
-      
-      <h3><i class="fa-solid fa-house"></i> Endereço</h3>
+  <footer class="footer">
+    <address>
       <p>Rua Forte do Leme, 52</p>
       <p>Jardim Santa Adélia</p>
       <p>São Paulo - SP</p>
