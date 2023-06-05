@@ -160,3 +160,40 @@ button {
 .required::after {
   content: "*";
 }
+
+@media screen and (max-width: 400px) {
+
+  main, .navbar, .page-title, .page-subtitle {
+    width: 100%;
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+
+  .imagem-banner {
+    height: 100px;
+  }
+
+  .navbar a {
+    white-space: nowrap;
+  }
+
+  .categoria-produto {
+    margin: 10px 0;
+  }
+
+  .lista-produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape {
+    text-align: center;
+  }
+
+}
+
+@media print {
+  
+}

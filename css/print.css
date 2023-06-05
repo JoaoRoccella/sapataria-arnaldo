@@ -1,0 +1,12 @@
+* {
+    color: #000;
+    background-color: #fff;
+}
+
+.categoria-produto {
+    background-color: aliceblue;
+}
+
+.imagem-banner {
+    display: none;
+}
