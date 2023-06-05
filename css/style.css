@@ -112,6 +112,7 @@ main {
   justify-content: space-between;
   margin: auto;
   background-color: var(--primary-color);
+  height: 4rem;
 }
 
 .logo {
@@ -140,7 +141,7 @@ main {
 
 .navbar a:link,
 .navbar a:visited {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -396,4 +397,10 @@ button {
   .footer {
     padding: 10px 5px;
   }
+}
+
+@media print {
+
+  
+
 }
