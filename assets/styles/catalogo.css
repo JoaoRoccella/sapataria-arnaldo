@@ -59,16 +59,16 @@
     object-position: 0 0;
 }
 
-.lista-produtos {
-    flex-direction: column;
-    align-items: center;
-}
-
 @media screen and (max-width: 400px) {
     
     .nav-categorias {
         width: 100%;
         margin: 20px 10px;
+    }
+
+    .lista-produtos {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
