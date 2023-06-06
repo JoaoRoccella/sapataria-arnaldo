@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="inicio">
 
     <div class="topo">
 
@@ -41,25 +41,35 @@
     <h2 class="page-subtitle">Conheça os nossos produtos</h2>
   </header>
 
+  <div>
+    <ul>
+      <li><a href="#sapatos">Sapatos</a></li>
+      <li><a href="#bolsas">Bolsas</a></li>
+    </ul>
+  </div>
+
   <main>
-    <section class="vitrine-produtos">
+    <section class="vitrine-produtos" id="sapatos">
       <h1 class="categoria-produto">Sapatos</h1>
       <ul class="product-list">
-        <li><img src="./img/produto-sapato-01.png" alt="Foto de um sapato de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-sapato-02.png" alt="Foto de um sapato de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-sapato-03.png" alt="Foto de um sapato de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-sapato-04.png" alt="Foto de um sapato de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-sapato-01.png" loading="eager" alt="Foto de um sapato de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-sapato-02.png" loading="eager" alt="Foto de um sapato de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-sapato-03.png" loading="eager" alt="Foto de um sapato de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-sapato-04.png" loading="eager" alt="Foto de um sapato de couro" class="imagem-produto"></li>
       </ul>
     </section>
     <section class="vitrine-produtos">
-      <h1 class="categoria-produto">Bolsas</h1>
+      <h1 class="categoria-produto" id="bolsas">Bolsas</h1>
       <ul class="product-list">
-        <li><img src="./img/produto-bolsa-01.png" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-bolsa-02.webp" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-bolsa-03.webp" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-bolsa-04.png" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-bolsa-01.png" loading="lazy" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-bolsa-02.webp" loading="lazy" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-bolsa-03.webp" loading="lazy" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-bolsa-04.png" loading="lazy" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
       </ul>
     </section>
+
+    <a href="#inicio">Topo</a>
+
   </main>
   <footer class="footer">
     <address>
