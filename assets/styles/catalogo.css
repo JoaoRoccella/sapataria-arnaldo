@@ -1,3 +1,10 @@
+.imagem-banner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 10%;
+  }
+
 .nav-categorias {
     margin: 20px auto;
     width: 80%;
@@ -54,12 +61,13 @@
 
 .imagem-produto {
     width: 100%;
-    height: 150px;
+    height: auto;
+    max-height: 300px;
     object-fit: contain;
     object-position: 0 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     
     .nav-categorias {
         width: 100%;
