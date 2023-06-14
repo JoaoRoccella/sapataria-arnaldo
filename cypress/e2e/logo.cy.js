@@ -1,4 +1,4 @@
-const sizes = [[480, 750], [600, 768], [1024, 768]]
+const sizes = [[370, 750], [600, 768], [1024, 768]]
 
 describe('Logo na Home', () => {
   sizes.forEach((size) => {
