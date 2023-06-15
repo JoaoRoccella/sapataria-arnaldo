@@ -1,66 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
-<head> 
+<html lang="pt-br">
+
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça o nosso catálogo e fique encantado com os nossos produtos e artigos em couro legítimo.">
+  <meta name="description"
+    content="Conheça o nosso catálogo e fique encantado com os nossos produtos e artigos em couro legítimo.">
   <meta name="author" content="João Roccella">
-  
+  <title>Sapataria do Arnaldo - Catálogo</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Sapataria do Arnaldo - Catálogo</title>
+  <link rel="stylesheet" href="./css/print.css" media="print">
 </head>
+
 <body>
-  <header>
+  <header id="inicio">
 
     <div class="topo">
 
       <div class="logo">
         <span>Sapataria do Arnaldo</span>
       </div>
-      
+
       <!-- Menu de Navegação -->
       <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-list-item">
-            <a class="navbar-link" href="./index.html">Home</a></li>
-          <li class="navbar-list-item">
-            <a class="navbar-link" href="./sobre-nos.html">Sobre Nós</a></li>
-          <li class="navbar-list-item">
-            <a class="navbar-link" href="./catalogo.html">Catálogo</a></li>
-          <li class="navbar-list-item">
-            <a class="navbar-link" href="./contato.html">Contato</a></li>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="./catalogo.html">Catálogo</a></li>
+          <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
-      
+
     </div>
 
-    <img src="./img/banner-catalogo.jpg" alt="" class="imagem-banner">
-    
+    <img src="./img/banner-catalogo.webp" alt="Foto de diversos produtos feitos a partir do couro; em foco uma bolsa e um sapato." class="imagem-banner" width="auto" height="200">
+
     <h1 class="page-title strong-title">Catálogo</h1>
     <h2 class="page-subtitle">Conheça os nossos produtos</h2>
-  </header> 
+  </header>
+
+  <div>
+    <ul>
+      <li><a href="#sapatos">Sapatos</a></li>
+      <li><a href="#bolsas">Bolsas</a></li>
+    </ul>
+  </div>
 
   <main>
-    <section class="vitrine-produtos">
+    <section class="vitrine-produtos" id="sapatos">
       <h1 class="categoria-produto">Sapatos</h1>
       <ul class="product-list">
-        <li><img src="./img/produto-sapato-01.png" alt="Foto de um sapato de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-sapato-02.png" alt="Foto de um sapato de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-sapato-03.png" alt="Foto de um sapato de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-sapato-04.png" alt="Foto de um sapato de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-sapato-01.png" loading="eager" alt="Foto de um sapato de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-sapato-02.png" loading="eager" alt="Foto de um sapato de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-sapato-03.png" loading="eager" alt="Foto de um sapato de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-sapato-04.png" loading="eager" alt="Foto de um sapato de couro" class="imagem-produto"></li>
       </ul>
     </section>
     <section class="vitrine-produtos">
-      <h1 class="categoria-produto">Bolsas</h1>
+      <h1 class="categoria-produto" id="bolsas">Bolsas</h1>
       <ul class="product-list">
-        <li><img src="./img/produto-bolsa-01.png" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-bolsa-02.webp" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-bolsa-03.webp" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
-        <li><img src="./img/produto-bolsa-04.png" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-bolsa-01.png" loading="lazy" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-bolsa-02.webp" loading="lazy" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-bolsa-03.webp" loading="lazy" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
+        <li><img src="./img/produto-bolsa-04.png" loading="lazy" alt="Foto de uma bolsa de couro" class="imagem-produto"></li>
       </ul>
     </section>
+
+    <a href="#inicio">Topo</a>
+
   </main>
   <footer class="footer">
     <address>
@@ -71,4 +80,5 @@
     </address>
   </footer>
 </body>
+
 </html>

@@ -1,0 +1,10 @@
+.imagem-banner,
+.topo {
+    display: none;
+}
+
+.page-title,
+.page-subtitle,
+.categoria-produto {
+    color: #000;
+}

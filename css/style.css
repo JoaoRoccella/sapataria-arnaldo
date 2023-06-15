@@ -5,6 +5,7 @@
   --primary-color: #a75207;
   --secondary-color: #faf3dd;
   --fonte-titulos: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -112,6 +113,7 @@ main {
   justify-content: space-between;
   margin: auto;
   background-color: var(--primary-color);
+  height: 4rem;
 }
 
 .logo {
@@ -140,12 +142,12 @@ main {
 
 .navbar a:link,
 .navbar a:visited {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
 .navbar li:hover,
-.navbar li:hover > a {
+.navbar li:hover>a {
   background-color: var(--primary-color);
   color: #ffffff;
 }
@@ -166,7 +168,7 @@ main {
 }
 
 /* Formulário */
-label, 
+label,
 button {
   display: block;
 }
@@ -285,11 +287,21 @@ button {
 }
 
 /* Responsividade para telas de até 380px */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
 
   .navbar li,
   .footer {
     padding: 10px 5px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -397,3 +409,5 @@ button {
     padding: 10px 5px;
   }
 }
+
+@media print {}
