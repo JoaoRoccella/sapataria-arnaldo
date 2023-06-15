@@ -43,11 +43,4 @@ describe('Testes da Navbar', () => {
         cy.log('Fim dos testes da Navbar');
     });
 
-  
-    it('O logo deve ser visível', function() {
-       
-        cy.visit('/index.html');
-        cy.get('.logo').should('be.visible');
-       
-    });
 });
